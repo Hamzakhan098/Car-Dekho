@@ -1,0 +1,633 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+}
+.container
+{
+    height: fit-content;
+}
+/************************row1 starts*****************/
+.row1
+{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.row1 .logoBox .logo
+{
+    width: 200px;
+}
+
+.row1 .searchBox
+{
+    display: flex;
+}
+
+.searchBox input[type=text]
+{
+    height: 50px;
+    width: 450px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 17px;
+    padding-left: 15px;
+}
+.searchBox div
+{
+    background-color: black;
+    width: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.row1 .loginBox
+{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+.row1 .loginBox > ion-icon
+{
+    font-size:24px;
+    font-weight: bold;
+    font-family: "impact";
+}
+.loginBox p
+{
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+}
+
+.loginBox span
+{
+    display: flex;
+    align-items: center;
+}
+
+.loginBox span ion-icon
+{
+    /* color: red; */
+    font-size: 24px;
+    margin-right: 7px;
+}
+/************************row1 ends*****************/
+/***********************row2 starts******************/
+.row2
+{
+    border: 2px solid red;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:2px solid whitesmoke;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    z-index: 99999;
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+.row2 ul
+{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:150px;
+    width: 750px;
+    font-size: 14px;
+}
+.row2 ul ion-icon
+{
+    font-size: 13px;
+    font-weight: normal;
+}
+.row2 ul li
+{
+    height: 100%;
+    line-height: 50px;
+    border:3px solid transparent;
+}
+.row2 ul li:hover
+{
+    font-weight: bold;
+    
+    border-top:3px solid orange;
+}
+.row2 .cityBox
+{
+    width: 120px;
+    margin-right:150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(88, 86, 86);
+}
+.row2 .cityBox > ion-icon
+{
+    font-size: 20px;
+}
+.row2 .cityBox p ion-icon
+{
+    font-size: 14px;
+}
+/***********************row2 ends******************/
+
+/***********************row3 starts******************/
+.row3
+{
+    width: 100%;
+    height: 600px;
+    background-image: url(slider/slider.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+.row3 .formBox
+{
+    width: 400px;
+    height: 90%;
+    background-color: white;
+    position: absolute;
+    left:200px;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formBox table
+{
+    height: 90%;
+    width: 90%;
+
+}
+.formBox table tr:first-child
+{
+    height: 50px;
+    text-align: left;
+}
+.formBox table tr:nth-child(2)
+{
+    height: 80px;
+    position: relative;
+}
+.formBox table tr:nth-child(2) button
+{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    color: white;
+    border-radius:5px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    border:1px solid grey;
+    width: 95%;
+}
+.formBox table tr:nth-child(2) .btn2
+{
+    background-color: white;
+    color: black;   
+}
+.formBox table tr:nth-child(2) ion-icon
+{
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    top: 52px;
+    left: 70px;
+    
+}
+.formBox table tr:nth-child(3)
+{
+    height: 60px;
+}
+.formBox table tr:nth-child(4)
+{
+    height: 120px;
+}
+.formBox table tr:nth-child(4) select
+{
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.formBox table tr:nth-child(5) button
+{
+    border: none;
+    background-color: orangered;
+    width: 100%;
+    height: 60px;
+    font-size: 26px;
+    color: white;
+    font-size: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.formBox table tr:nth-child(3) 
+{
+   font-weight: bold;
+   accent-color:orange;
+}
+.formBox table tr:nth-child(3) .orangeRadio
+{
+    color: orangeRed;
+}
+.formBox table tr:nth-child(6)
+{
+    height: 40px;
+    color: rgb(45, 44, 44);
+    font-size: 16px;
+    font-size: bold;
+}
+.formBox table tr:nth-child(6) ion-icon
+{
+    font-size: 24px;
+    position: relative;
+    top:7px;
+}
+
+/***********************row3 ends******************/
+/***********************row4 starts******************/
+.row4
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:250px;
+}
+.row4 .carContainer
+{
+    width: 80%;
+}
+.carRow1
+{
+    border-radius:4px;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.carRow1 .menu
+{
+    list-style: none;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    
+}
+.carRow1 .menu li:first-child
+{
+    color: red;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    
+}
+.carRow1 .carRow
+{
+    height: 65%;
+    display: flex;
+    column-gap: 20px;
+}
+
+.carRow .box
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0px 0px 1px;
+}
+
+.carRow .box img
+{
+    width: 100%;
+}
+.carRow .box button
+{
+    background-color: none;
+    border:1px solid red;
+    width: 94%;
+    color: red;
+    text-align: center;
+    height: 40px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    background-color: transparent;
+}
+.carRow .box p, .carRow .box h4
+{
+    margin-left: 4%;
+}
+.carRow1 > p
+{
+    color: blue;
+}
+/***********************************row4 ends***************************/
+/***********************************row5 starts***************************/
+.carRow1:nth-child(5)
+{
+    /* background-color: yellow; */
+    height: 300px;
+}
+.carRow1 .logoRow
+{
+    display: flex; 
+    justify-content: space-between;   
+}
+.carRow1 .logoRow .box
+{
+    width: 170px;
+    height: 170px;
+    box-shadow: 0px 0px 1px grey;
+}
+.logoRow .box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoRow .box p
+{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/***********************************row5 ends***************************/
+/***********************************row6 starts***************************/
+.carRow1:nth-child(6)
+{
+    height: 200px;
+    background-color: rgb(176, 200, 209);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.carRow1:nth-child(6) img
+{
+    width: 180px;
+    position: relative;
+    top: 20px;
+}
+.carRow1:nth-child(6) button
+{
+    background-color: orangered;
+    width: 180px;
+    height: 40px;
+    color: white;
+    border:none;
+    box-shadow: 0px 0px 5px orange;
+}
+.carRow1:nth-child(6) .content
+{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carRow1:nth-child(6) .content p
+{
+    font-size: 12px;
+}
+.carRow1:nth-child(6) .content h5 span
+{
+    font-size: 11px;
+}
+.carRow1:nth-child(6) h2
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.carRow1:nth-child(7)
+{
+    height: 450px;
+    background-image:url('images/cityBackground.png') ;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+}
+.carRow1 .locationRow
+{
+    height: 400px;
+    display: flex;
+}
+.carRow1 .locationRow .location
+{
+    flex: 6;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.carRow1 .locationRow .location .box
+{
+    width: 160px;
+    height: 180px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+.carRow1 .locationRow .location .box p
+{
+    font-size: 12px;
+}
+.carRow1 .locationRow .location .box .city
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carRow1 .locationRow .location .box img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+.carRow1 .locationRow .searchCity
+{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.carRow1 .locationRow .searchCity h2
+{
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+    margin:20px 0px;
+}
+.carRow1 .locationRow .searchCity .selectCity
+{
+    height: 40px;
+    margin: 10px 0px;
+}
+.footerRow
+{
+    height: 730px;
+    position: relative;
+    top: 250px;
+    background-color: white;
+}
+.footerRow  .footerRow1
+{
+    /* background-color: red; */
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerRow .footerRow1 .box
+{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.footerRow .footerRow1 .box ion-icon
+{
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footerRow .footerRow1 .box span
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+}
+.footerRow2
+{
+    display: flex;
+    column-gap: 20px;
+    height: 80%;
+}
+
+.footerRow2 div
+{
+    flex: 1;
+    /* background-color: red; */
+    padding: 50px;
+    box-sizing: border-box;
+}
+.footerRow2  .col1 ul
+{
+    list-style: none;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+    color: grey;
+}
+.footerRow2  .col2 ul
+{
+    list-style: none;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+    color: grey;
+}
+.footerRow2  .col3 ul
+{
+    list-style: none;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+    color: grey;
+}
+.col4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+.col4 p
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.row6
+{
+    height: 70px;
+    background-color: white;
+    position: relative;
+    z-index: 99999;
+    top: 250px;
+    display: flex;
+    justify-content: space-between ;
+    padding: 0px 70px;
+    border-top: 1px solid rgba(128, 128, 128,0.4);
+}
+
+.row6 .row6Box1
+{
+    width: fit-content;
+    color: grey;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.row6 .row6Box2
+{
+    width: 300px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+}
+.row6 .row6Box2 ion-icon
+{
+    font-size: 24px;
+}
